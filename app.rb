@@ -45,7 +45,6 @@ class App < Sinatra::Base
       @result = params[:number1].to_i / params[:number2]
     end
     "#{@result}"
-    binding.pry
   end
 
 end
