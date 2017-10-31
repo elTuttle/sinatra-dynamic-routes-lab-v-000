@@ -29,7 +29,8 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    @result = params[:number1].send(params[:operation],params[:number2])
+    @operation = params[:operation]
+    if
     "#{@result}"
   end
 
