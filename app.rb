@@ -28,4 +28,8 @@ class App < Sinatra::Base
     "#{@result}"
   end
 
+  get '/:operation/:number1/:number2' do
+    @result = params[:number1].send(params[:operation],params[:number2])
+  end
+
 end
